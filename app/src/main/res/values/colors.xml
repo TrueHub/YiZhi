@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#edd1b0</color>
+    <color name="colorAccent">#9b40d4</color>
+    <color name="colwhite_20">#30ffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="yellow">#f69423</color>
+    <color name="black">#484644</color>
+    <color name="white">#f5efe9</color>
+    <color name="test">#f1784c06</color>
+
+    <color name="gray">#0f1e1e1e</color>
+    <color name="mention">#167fbc</color>
+    <color name="dmention">#d43d7494</color>
+    <color name="bg_yellow_alpha">#e0edd1b0</color>
+    <color name="dark">#762081</color>
+</resources>

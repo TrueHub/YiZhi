@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!--
+    当此item时添加给v7包的ActionBar使用时，在使用showAsAction属性以及actionViewClass，actionLayout属性时注意：
+    需要执行2步操作，才能让这些属性生效
+    1. 在menu的根标签中添加
+     xmlns:app="http://schemas.android.com/apk/res-auto"    用于声明第三方属性的命名空间
+     2. 将showAsShow等属性的：前的内容修改为app
+    -->
+    <item
+        android:title="保存"
+        android:id="@+id/save"
+        android:icon="@drawable/ic_save_24dp"
+        app:showAsAction="always|collapseActionView"
+        />
+    <item
+        android:title="保存"
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_24dp"
+        app:showAsAction="always|collapseActionView"
+        />
+</menu>

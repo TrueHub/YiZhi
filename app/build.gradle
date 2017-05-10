@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "com.meihuayishu.vone"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("F:\\andoid_app\\Yizhi\\mengshiilee.jks")
+            storePassword "00msl00"
+            keyAlias "mengshiilee"
+            keyPassword "00msl00"
+        }
+    }
+
+    buildTypes {
+        release {
+            //release时使用release签名
+            signingConfig signingConfigs.release
+            //代码混淆
+            minifyEnabled false
+            //Zip代码压缩优化
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            //debug时使用release签名
+            signingConfig signingConfigs.release
+            //Zip代码压缩优化
+            zipAlignEnabled true
+            //移除无用资源
+            shrinkResources true
+
+        }
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile files('libs/MobCommons-2017.0216.1054.jar')
+    compile files('libs/MobTools-2017.0216.1054.jar')
+    compile files('libs/ShareSDK-Core-2.8.1.jar')
+    compile files('libs/ShareSDK-Evernote-2.8.1.jar')
+    compile files('libs/ShareSDK-QQ-2.8.1.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.8.1.jar')
+    compile files('libs/ShareSDK-Wechat-2.8.1.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.8.1.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.8.1.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.8.1.jar')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:percent:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+}

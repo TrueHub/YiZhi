@@ -1,0 +1,263 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context="com.meihuayishu.vone.ui.GuaciFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_order"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="〔本卦〕" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="乾為天" />
+
+        <TextView
+            android:id="@+id/tv_stru"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="〔乾下乾上〕" />
+    </LinearLayout>
+    <!--六爻爻辞-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_yong"
+            style="@style/dmentionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用九，見群龍無首，吉。"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_line6_name"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上九：" />
+
+            <ImageView
+                android:id="@+id/iv_yao6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal"
+                android:src="@mipmap/yang" />
+
+            <TextView
+                android:id="@+id/tv_line6_content"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="亢龍有悔。" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_line5_name"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="九五：" />
+
+            <ImageView
+                android:id="@+id/iv_yao5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal"
+                android:src="@mipmap/yang" />
+
+            <TextView
+                android:id="@+id/tv_line5_content"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="飛龍在天，利見大人。" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_line4_name"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="九四：" />
+
+            <ImageView
+                android:id="@+id/iv_yao4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal"
+                android:src="@mipmap/yang" />
+
+            <TextView
+                android:id="@+id/tv_line4_content"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="或躍在淵，無咎。" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_line3_name"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="九三：" />
+
+            <ImageView
+                android:id="@+id/iv_yao3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal"
+                android:src="@mipmap/yang" />
+
+            <TextView
+                android:id="@+id/tv_line3_content"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="君子終日乾乾，夕惕若，厲，無咎。" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_line2_name"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="九二：" />
+
+            <ImageView
+                android:id="@+id/iv_yao2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal"
+                android:src="@mipmap/yang" />
+
+            <TextView
+                android:id="@+id/tv_line2_content"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="見龍在田，利見大人。" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_line1_name"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="初九：" />
+
+            <ImageView
+                android:id="@+id/iv_yao1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal"
+                android:src="@mipmap/yang" />
+
+            <TextView
+                android:id="@+id/tv_line1_content"
+                style="@style/dmentionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="潛龍勿用。" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--彖-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dmentionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="彖曰：" />
+
+        <TextView
+            android:id="@+id/tv_tuan"
+            style="@style/dmentionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大哉乾元，萬物資始，乃統天。云行雨施，品物流形。大明始終，六位時成，時乘六龍以御天。乾道變化，各正性命，保合大和，乃利貞。首出庶物，萬國咸寧。" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/dmentionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="象曰：" />
+
+        <TextView
+            android:id="@+id/tv_xiang"
+            style="@style/dmentionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天行健，君子以自強不息。潛龍勿用，陽在下也。見龍在田，德施普也。終日乾乾，反復道也。或躍在淵，進無咎也。飛龍在天，大人造也。亢龍有悔，盈不可久也。" />
+    </LinearLayout>
+
+</LinearLayout>

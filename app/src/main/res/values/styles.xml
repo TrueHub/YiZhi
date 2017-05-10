@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <!--<item name="statusBarColor">@color/colorPrimary</item>-->
+        <!--<item name="textColorPrimary">@color/yellow</item>-->
+        <!--自定义AlertDialog-->
+        <item name="alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert.Self</item>
+    </style>
+
+    <style name="ResultTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--自定义AlertDialog-->
+        <item name="alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert.Self</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.Dialog.Alert.Self"
+        parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <!--修改AlertDialog按钮的颜色-->
+        <item name="colorAccent">#f1784c06</item>
+        <item name="android:colorBackground">#e0edd1b0</item>
+
+    </style>
+
+    <!-- 自定义dialogActivity的样式 -->
+    <style name="MyDialogStyleBottom" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/Base.Animation.AppCompat.DropDownUp</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+    
+    <style name="normalText">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">@dimen/normal_result</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="mentionText">
+        <item name="android:textColor">@color/mention</item>
+        <item name="android:textSize">@dimen/mention_result</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="dmentionText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/mention_result</item>
+    </style>
+
+</resources>

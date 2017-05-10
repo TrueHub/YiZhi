@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <View
+        android:id="@+id/repair_date_other"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+         />
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <Button
+            android:id="@+id/repair_date_sel_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:text="取消"
+            android:textColor="@color/yellow"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/repair_date_sel_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="确定"
+            android:textColor="@color/yellow"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="填写资料，准备八字排盘"
+            android:textColor="@color/yellow"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别："
+            android:textSize="15sp"
+            android:textColor="@color/yellow"
+            android:layout_marginStart="10dp"
+        />
+        <Switch
+            android:id="@+id/switch_male_bazi"
+            android:track="@drawable/track"
+            android:thumb="@drawable/thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="女"
+            android:textOff="男"
+            android:switchMinWidth="30dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_yellow_alpha"
+        android:orientation="horizontal"
+        >
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5" />
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>
