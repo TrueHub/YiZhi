@@ -48,7 +48,7 @@ public class MenuItemClickImp implements OnMenuItemClickListener {
                 break;
             case 3://占字
 
-//                Toast.makeText(view.getContext(),"占字",Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext().getApplicationContext(),"占字功能开发中...不要太期待",Toast.LENGTH_SHORT).show();
                 break;
             default:
 
